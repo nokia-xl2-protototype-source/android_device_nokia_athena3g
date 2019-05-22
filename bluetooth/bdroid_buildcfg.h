@@ -18,7 +18,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Ara"
+#define BTM_DEF_LOCAL_NAME   "Athena3g"
 #define BLUETOOTH_QCOM_SW TRUE
 // Enables Interleave scan
 #define BTA_HOST_INTERLEAVE_SEARCH  TRUE

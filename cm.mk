@@ -1,20 +1,20 @@
 # Boot animation
-TARGET_SCREEN_WIDTH := 480
-TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/nokia/ara/ara.mk)
+$(call inherit-product, device/nokia/athena3g/athena3g.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ara
-PRODUCT_NAME := cm_ara
+PRODUCT_DEVICE := athena3g
+PRODUCT_NAME := cm_athena3g
 PRODUCT_BRAND := Nokia
-PRODUCT_MODEL := ara
+PRODUCT_MODEL := athena3g
 PRODUCT_MANUFACTURER := Nokia
-PRODUCT_RELEASE_NAME := ara
+PRODUCT_RELEASE_NAME := athena3g
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \

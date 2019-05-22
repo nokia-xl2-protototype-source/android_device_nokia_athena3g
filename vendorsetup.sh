@@ -1,1 +1,1 @@
-add_lunch_combo cm_ara-userdebug
+add_lunch_combo cm_athena3g-userdebug

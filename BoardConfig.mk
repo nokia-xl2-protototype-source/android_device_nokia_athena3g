@@ -35,7 +35,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/nokia/ara/include
 
 # Inline kernel building
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/nokia/ara/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/nokia/athena3g/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/nokia/msm8610
 #TARGET_KERNEL_CONFIG := msm8610-nokia_debug_defconfig
 TARGET_KERNEL_CONFIG := msm8610-nokia_defconfig
@@ -56,7 +56,7 @@ AUDIO_FEATURE_DISABLED_DS1_DOLBY_DDP := true
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nokia/ara/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nokia/athena3g/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
@@ -86,7 +86,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/nokia/ara/cmhw/
+BOARD_HARDWARE_CLASS := device/nokia/athena3g/cmhw/
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -114,7 +114,7 @@ BOARD_USES_QCOM_HARDWARE := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/nokia/ara/ramdisk/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/nokia/athena3g/ramdisk/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -143,7 +143,7 @@ BOARD_HAS_JANKY_BACKBUFFER := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/nokia/ara/sepolicy
+    device/nokia/athena3g/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \
